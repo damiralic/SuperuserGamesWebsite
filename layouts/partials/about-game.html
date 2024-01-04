@@ -1,0 +1,35 @@
+<h1 class="center-titles">Our Games</h1>
+<br>
+<br>
+<br>
+<div class="relative w-screen max-w-[1600px] px-[30px]" style="left: calc(max(-50vw,-800px) + 50%);">
+  <h1 class="left-subtitles">Fisherman's Palace</h1>
+  </div>
+  <br>
+  <div class="relative w-screen max-w-[1600px] px-[30px]" style="left: calc(max(-50vw,-800px) + 55%);">
+    <div style="width: 40%; float: left;">
+      <h1 class="mobile-text">Fisherman’s Palace is an adventure game about a man who escaped the chaotic city life to start a new chapter in a relaxing village, 
+        but a mysterious fish has appeared.
+        Are you ready to cast your fate in the waters of the Fisherman's Palace. <br>
+        <br>
+        In Fisherman's Palace, fishing isn't just a pastime, it's the main event! 
+        The art of fishing is ingrained in the village's culture. 
+        With over 90 species of fish swimming in these waters, the challenge is on, 
+        to hook the best one! Cast your line, and become a master fisherman. 
+        It's not just a sport, it's a way of life. 
+        Get ready to tackle the waters and make a splash with your fishing skills!</h1>
+        <br>
+        <button class="wishlist-button" onclick=" window.open('https://store.steampowered.com/app/2749370/Fishermans_Palace/','_blank')">Wishlist NOW!</button>
+      </div>
+    </div>
+
+<div class="relative w-screen max-w-[1600px] px-[30px]" style="right: calc(max(-50vw,-800px) + 75%);">
+    <div class="image-container">
+      {{ $image := resources.Get "/img/gameimgs/0008.jpg" }}
+        <img id="myImage" src="{{ $image.RelPermalink }}">
+        {{ $image2 := resources.Get "/img/gameimgs/0001.jpg" }}
+        <img src="{{ $image2.RelPermalink }}">
+    </div>
+  </div>
+
+

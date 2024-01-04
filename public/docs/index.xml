@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Blogs on SuperuserGames</title>
+    <link>https://www.superusergames.com/docs/</link>
+    <description>Recent content in Blogs on SuperuserGames</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>© 2024 SuperuserGames</copyright>
+    <lastBuildDate>Sat, 23 Dec 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://www.superusergames.com/docs/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>And We&#39;re LIVE!</title>
+      <link>https://www.superusergames.com/docs/first-post/</link>
+      <pubDate>Sat, 23 Dec 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.superusergames.com/docs/first-post/</guid>
+      <description>Hello everyone! This is our very first post about Fisherman&amp;rsquo;s Palace.
+We are so very proud that we actually got the steam page up and running, and everything went smoothly without any issues.</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://www.superusergames.com/docs/first-post/featured.jpg" />
+    </item>
+    
+  </channel>
+</rss>

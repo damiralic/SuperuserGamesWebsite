@@ -1,0 +1,4 @@
+baseURL = 'https://superusergames.com/'
+languageCode = 'en-us'
+title = 'SuperuserGames'
+theme = "blowfish"
