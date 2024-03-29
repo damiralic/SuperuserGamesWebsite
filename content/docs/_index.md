@@ -9,7 +9,7 @@ cascade:
 ---
 
 {{< lead >}}
-Learn more about updates in our games!
+Here are all the update blogs for our various games!
 {{< /lead >}}
 
 ---
