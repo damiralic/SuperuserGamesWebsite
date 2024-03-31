@@ -76,7 +76,7 @@ Now we're in the concept phase of the UI build but it's looking good and we like
 <br>
 
 {{< alert "ghost" >}}
-If you haven't already, [JOIN](https://discord.com/invite/8qvRQZSj) us on Discord.
+If you haven't already, [JOIN](https://discord.com/invite/hyRKS4YXS8) us on Discord.
 {{< /alert >}}
 
 The final thing on this update list, which was really long, is the boat mechanics. 
