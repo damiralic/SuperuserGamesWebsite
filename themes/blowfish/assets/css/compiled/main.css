@@ -8171,26 +8171,61 @@ pre {
 }
 
 .image-container img {
-  display: block;
-  width: 100%;
-  transform: rotate(-3deg); /* Adjust the rotation angle */
-  transition: transform 0.3s ease;
+  max-width: 100%;
+  max-height: 400px; /* Set a max height */
+  border-radius: 15px; /* Round image corners */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2), 0 1px 3px rgba(0, 0, 0, 0.1); /* Image shadow */
+  transition: transform 0.3s ease, box-shadow 0.3s ease, filter 0.3s ease;
+  cursor: pointer; /* Makes the image clickable */
 }
 
 .image-container img:hover {
   transform: rotate(3deg);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3); /* More prominent shadow */
+  filter: brightness(1.2); /* Brightens the image */
 }
-.wishlist-button{
-    background-color: #008CBA; /* Green */
-    border: none;
-    color: white;
-    font-family: 'Outfit', sans-serif;
-    text-decoration: none;
-    padding: 15px 32px;
-    text-align: center;
-    display: inline-block;
-    font-size: 16px;
-    border-radius: 10%;
+.wishlist-button {
+  background-color: #008CBA; /* Vibrant blue */
+  border: none;
+  color: white;
+  font-family: 'Outfit', sans-serif;
+  text-decoration: none;
+  padding: 15px 32px;
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 10%; /* Slightly rounded corners */
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.06);
+}
+
+.wishlist-button:hover {
+  background-color: #005f8b; /* Darker blue */
+  transform: scale(1.1); /* Slight enlargement */
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2), 0 2px 5px rgba(0, 0, 0, 0.15);
+}
+
+.wishlist-button:active {
+  background-color: #003f5e; /* Even darker blue */
+  transform: scale(0.95); /* Slight shrink */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.06);
+}
+
+@keyframes pulse {
+  0%, 100% {
+      transform: scale(1);
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.06);
+  }
+  50% {
+      transform: scale(1.05);
+      box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15), 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+}
+
+.wishlist-button:focus {
+  animation: pulse 1.5s infinite;
+  outline: none;
 }
 
 /* MOBILE CONFIGURATION */
