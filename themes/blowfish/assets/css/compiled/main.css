@@ -2470,6 +2470,18 @@ select {
   max-width: 100%;
 }
 
+.simple-w{
+  max-width: 75%;
+}
+
+.center-middle{
+  position: relative; /* Relative to its normal position */
+  left: 50%; /* Start centering horizontally */
+  transform: translate(-35%, 0); /* Center the element precisely */
+  margin-top: 2rem; /* Add adjustable space above */
+  padding-left: 1rem; /* Fine-tune horizontal alignment (optional) */
+}
+
 .max-w-prose {
   max-width: 65ch;
 }
@@ -8226,6 +8238,11 @@ pre {
 .wishlist-button:focus {
   animation: pulse 1.5s infinite;
   outline: none;
+}
+
+.roadmap-maindiv{
+  text-align: justify;
+  justify-content: center;
 }
 
 /* MOBILE CONFIGURATION */
