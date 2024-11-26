@@ -27,3 +27,7 @@ Since she was a child she loved doing anything creative, she played piano and gu
 Together they started working on a lot of different projects to learn as much as they could and improve.
 
 In October of 2023. They decided it was time to start working on a commercial game and that is Fisherman's Palace.
+
+{{< button href=https://impress.games/press-kit/superusergames/fishermans-palace target="_blank" >}}
+Get Our Press Kit
+{{< /button >}}
