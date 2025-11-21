@@ -1,35 +1,111 @@
-<h1 class="center-titles">Our Games</h1>
-<br>
-<br>
-<br>
-<div class="relative w-screen max-w-[1600px] px-[30px]" style="left: calc(max(-50vw,-800px) + 50%);">
-  <h1 class="left-subtitles">Fisherman's Palace</h1>
-  </div>
-  <br>
-  <div class="relative w-screen max-w-[1600px] px-[30px]" style="left: calc(max(-50vw,-800px) + 55%);">
-    <div style="width: 40%; float: left;">
-      <h1 class="mobile-text">Fisherman’s Palace is an adventure game about a man who escaped the chaotic city life to start a new chapter in a relaxing village, 
-        but a mysterious fish has appeared.
-        Are you ready to cast your fate in the waters of the Fisherman's Palace. <br>
-        <br>
-        In Fisherman's Palace, fishing isn't just a pastime, it's the main event! 
-        The art of fishing is ingrained in the village's culture. 
-        With over 90 species of fish swimming in these waters, the challenge is on, 
-        to hook the best one! Cast your line, and become a master fisherman. 
-        It's not just a sport, it's a way of life. 
-        Get ready to tackle the waters and make a splash with your fishing skills!</h1>
-        <br>
-        <button class="wishlist-button" onclick=" window.open('https://store.steampowered.com/app/2749370/Fishermans_Palace/','_blank')">Buy NOW!</button>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Games Carousel</title>
+  {{ $css := resources.Get "css/our-games.css" }}
+  <link rel="stylesheet" href="{{ $css.RelPermalink }}">
+</head>
+
+<body style="background: #1a1a2e; color: white;">
+  <div class="games-container">
+    <h1 class="games-title">Our Games</h1>
+
+    <button class="carousel-nav prev" onclick="carouselController.prev()">‹</button>
+    <div class="carousel-wrapper">
+
+      <div class="carousel-container" id="carouselContainer">
+        <!-- Game 1: Fisherman's Palace -->
+        <div class="game-card">
+          <div class="game-content-wrapper">
+            <div class="game-content">
+              <h2 class="game-title">Fisherman's Palace</h2>
+              <p class="game-description">
+                Fisherman's Palace is an adventure game about a man who escaped the chaotic city life to start a new
+                chapter in a relaxing village, but a mysterious fish has appeared. Are you ready to cast your fate in
+                the waters of the Fisherman's Palace?
+                <br><br>
+                In Fisherman's Palace, fishing isn't just a pastime, it's the main event! The art of fishing is
+                ingrained in the village's culture. With over 90 species of fish swimming in these waters, the challenge
+                is on to hook the best one!
+              </p>
+              <button class="cta-button"
+                onclick="window.open('https://store.steampowered.com/app/2749370/Fishermans_Palace/','_blank')">
+                Buy Now
+              </button>
+            </div>
+
+            <div class="game-images">
+              {{ $image := resources.Get "/img/gameimgs/0000.jpg" }}
+              <img src="{{ $image.RelPermalink }}" alt="Fisherman's Palace gameplay">
+              {{ $image2 := resources.Get "/img/gameimgs/0002.jpg" }}
+              <img src="{{ $image2.RelPermalink }}" alt="Fisherman's Palace screenshot">
+            </div>
+          </div>
+        </div>
+        <!-- Game 1 End -->
+
+        <!-- Game 2 -->
+        <div class="game-card">
+          <div class="game-content-wrapper">
+            <div class="game-content">
+              <h2 class="game-title">Gardener Simulator</h2>
+              <p class="game-description">
+                Start your own gardening business. Mow lawns, Trim hedges, blow leaves. Upgrade tools and become the
+                ultimate gardener.
+              </p>
+              <button class="cta-button"
+                onclick="window.open('https://store.steampowered.com/app/4122820/Gardener_Simulator/','_blank')">
+                Buy Now
+              </button>
+            </div>
+
+            <div class="game-images">
+              {{ $image := resources.Get "/img/gameimgs/0010.jpg" }}
+              <img src="{{ $image.RelPermalink }}" alt="Game 2 gameplay">
+              {{ $image2 := resources.Get "/img/gameimgs/0011.png" }}
+              <img src="{{ $image2.RelPermalink }}" alt="Game 2 screenshot">
+            </div>
+          </div>
+        </div>
+        <!-- Game 2 End -->
+
+        <!-- Game 3 -->
+        <!-- <div class="game-card">
+          <div class="game-content-wrapper">
+            <div class="game-content">
+              <h2 class="game-title">Game Title 3</h2>
+              <p class="game-description">
+                Add your third game description here. Each game card maintains the same responsive layout and styling as
+                the first one.
+                <br><br>
+                The horizontal scroll is hidden - users navigate through the carousel via buttons, dots, or the
+                automatic 5-second timer.
+              </p>
+              <button class="cta-button" onclick="window.open('#','_blank')">
+                Buy Now
+              </button>
+            </div>
+
+            <div class="game-images">
+              {{ $image := resources.Get "/img/gameimgs/0000.jpg" }}
+              <img src="{{ $image.RelPermalink }}" alt="Game 3 gameplay">
+              {{ $image2 := resources.Get "/img/gameimgs/0002.jpg" }}
+              <img src="{{ $image2.RelPermalink }}" alt="Game 3 screenshot">
+            </div>
+          </div>
+        </div> -->
+        <!-- Game 3 End -->
       </div>
     </div>
+    <button class="carousel-nav next" onclick="carouselController.next()">›</button>
 
-<div class="relative w-screen max-w-[1600px] px-[30px]" style="right: calc(max(-50vw,-800px) + 75%);">
-    <div class="image-container">
-      {{ $image := resources.Get "/img/gameimgs/0000.jpg" }}
-        <img id="myImage" src="{{ $image.RelPermalink }}">
-        {{ $image2 := resources.Get "/img/gameimgs/0002.jpg" }}
-        <img src="{{ $image2.RelPermalink }}">
-    </div>
+    <div class="carousel-controls" id="carouselControls"></div>
   </div>
+  {{ $js := resources.Get "js/carousel.js" }}
+  <script src="{{ $js.RelPermalink }}"></script>
+</body>
 
-
+</html>
