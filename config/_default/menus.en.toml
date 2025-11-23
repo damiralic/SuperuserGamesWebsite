@@ -33,7 +33,7 @@
     [[main]]
   identifier = "steam"
   pre = "steam"
-  url = "https://store.steampowered.com/app/2749370/Fishermans_Palace"
+  url = "https://store.steampowered.com/search/?developer=SuperuserGames"
   weight = 200
 
   [[main]]
@@ -51,7 +51,7 @@
   [[main]]
   identifier = "youtube"
   pre = "youtube"
-  url = "https://twitter.com/palacefisherman"
+  url = "https://www.youtube.com/@SuperuserGames"
   weight = 300
 
 #[[main]]
