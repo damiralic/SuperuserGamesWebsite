@@ -10,12 +10,12 @@ cascade:
 ---
 
 {{< lead >}}
-Here's the roadmap for our current game Fisherman's Palace!
+Updates coming soon! 😉
 {{< /lead >}}
 
 ---
 
-
+<!-- 
 <details>
 <summary style="cursor: pointer;"><strong>✅ Completed</strong></summary>
 
@@ -83,4 +83,4 @@ Embark on exciting journeys to different islands!
 
 {{< /timeline >}}
 </details>
-
+ -->

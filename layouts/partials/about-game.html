@@ -17,7 +17,32 @@
     <div class="carousel-wrapper">
 
       <div class="carousel-container" id="carouselContainer">
-        <!-- Game 1: Fisherman's Palace -->
+                <!-- Game 1 Gardener Simulator (most recent game) -->
+                <div class="game-card">
+                  <div class="game-content-wrapper">
+                    <div class="game-content">
+                      <h2 class="game-title">Gardener Simulator</h2>
+                      <p class="game-description">
+                        Start your own gardening business. Mow lawns, Trim hedges, blow leaves. Upgrade tools and become the
+                        ultimate gardener.
+                      </p>
+                      <button class="cta-button"
+                        onclick="window.open('https://store.steampowered.com/app/4122820/Gardener_Simulator/','_blank')">
+                        Buy Now
+                      </button>
+                    </div>
+        
+                    <div class="game-images">
+                      {{ $image := resources.Get "/img/gameimgs/0010.jpg" }}
+                      <img src="{{ $image.RelPermalink }}" alt="Game 2 gameplay">
+                      {{ $image2 := resources.Get "/img/gameimgs/0011.jpg" }}
+                      <img src="{{ $image2.RelPermalink }}" alt="Game 2 screenshot">
+                    </div>
+                  </div>
+                </div>
+                <!-- Game 1 End -->
+
+        <!-- Game 2: Fisherman's Palace -->
         <div class="game-card">
           <div class="game-content-wrapper">
             <div class="game-content">
@@ -42,31 +67,6 @@
               <img src="{{ $image.RelPermalink }}" alt="Fisherman's Palace gameplay">
               {{ $image2 := resources.Get "/img/gameimgs/0002.jpg" }}
               <img src="{{ $image2.RelPermalink }}" alt="Fisherman's Palace screenshot">
-            </div>
-          </div>
-        </div>
-        <!-- Game 1 End -->
-
-        <!-- Game 2 -->
-        <div class="game-card">
-          <div class="game-content-wrapper">
-            <div class="game-content">
-              <h2 class="game-title">Gardener Simulator</h2>
-              <p class="game-description">
-                Start your own gardening business. Mow lawns, Trim hedges, blow leaves. Upgrade tools and become the
-                ultimate gardener.
-              </p>
-              <button class="cta-button"
-                onclick="window.open('https://store.steampowered.com/app/4122820/Gardener_Simulator/','_blank')">
-                Buy Now
-              </button>
-            </div>
-
-            <div class="game-images">
-              {{ $image := resources.Get "/img/gameimgs/0010.jpg" }}
-              <img src="{{ $image.RelPermalink }}" alt="Game 2 gameplay">
-              {{ $image2 := resources.Get "/img/gameimgs/0011.jpg" }}
-              <img src="{{ $image2.RelPermalink }}" alt="Game 2 screenshot">
             </div>
           </div>
         </div>
